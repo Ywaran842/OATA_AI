@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram-like UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+        .navbar {
+            background-color: #ffffff;
+        }
+        .navbar a {
+            color: #000;
+        }
+        .post {
+            margin-bottom: 30px;
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+        .post-header {
+            font-weight: bold;
+        }
+        .post-caption {
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        .post-interactions i {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">InstaClone</a>
+            <div class="d-flex">
+                <a href="#" class="btn btn-outline-dark me-2"><i class="fas fa-home"></i></a>
+                <a href="#" class="btn btn-outline-dark me-2"><i class="fas fa-search"></i></a>
+                <a href="#" class="btn btn-outline-dark"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- Post Feed -->
+        <div class="post">
+            <div class="post-header">
+                <span><strong>johndoe</strong></span>
+                <span class="float-end text-muted">2 hours ago</span>
+            </div>
+            <img src="https://via.placeholder.com/600x400" alt="Post Image">
+            <div class="post-interactions mt-2">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="post-caption mt-2">
+                <p><strong>johndoe</strong> Just a day at the beach! #vacation #beachlife</p>
+            </div>
+        </div>
+
+        <!-- Another Post -->
+        <div class="post">
+            <div class="post-header">
+                <span><strong>janedoe</strong></span>
+                <span class="float-end text-muted">5 hours ago</span>
+            </div>
+            <img src="https://via.placeholder.com/600x400" alt="Post Image">
+            <div class="post-interactions mt-2">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="post-caption mt-2">
+                <p><strong>janedoe</strong> Hanging out with friends! #goodtimes #friends</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 InstaClone</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

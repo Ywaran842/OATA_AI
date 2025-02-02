@@ -1,0 +1,49 @@
+{% extends 'base_home.html' %}
+
+{% block header %}
+  <h1>{% block title %}Edit "{{ post['title'] }}"{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+      <h1 class="mb-4">Update Post</h1>
+      <form method="POST" action="{{ url_for('main.update', id=post['id']) }}" enctype="multipart/form-data">
+          {{ form.hidden_tag() }}
+          
+          <!-- Title Field -->
+          <div class="mb-3">
+              <label for="title" class="form-label">{{ form.title.label.text }}</label>
+              {{ form.title(class="form-control", id="title", required=True) }}
+          </div>
+          
+          <!-- Body Field -->
+          <div class="mb-3">
+              <label for="body" class="form-label">{{ form.body.label.text }}</label>
+              {{ form.body(class="form-control", id="body", rows="5") }}
+          </div>
+          
+          <!-- Image Upload Field -->
+          <div class="mb-3">
+              <label for="img" class="form-label">{{ form.img.label.text }}</label>
+              <div class="mb-2">
+                  {% if post['img'] %}
+                  <img src="{{ post['img'] }}" alt="Current Image" class="img-thumbnail" style="max-width: 200px;">
+                  {% else %}
+                  <p class="text-muted">No image uploaded</p>
+                  {% endif %}
+              </div>
+              {{ form.img(class="form-control", id="img", accept="image/*") }}
+          </div>
+          
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary">Update</button>
+          <a href="{{ url_for('main.index') }}" class="btn btn-secondary">Cancel</a>
+          {{ form.hidden_tag() }}
+      </form>
+      <form action="{{ url_for('main.Deletepost', id=post['id']) }}" method="post">
+        {{ form.hidden_tag() }}
+        <input class="btn btn-danger mt-3" type="submit" value="Delete" onclick="return confirm('Are you sure?')">
+    </form>
+    
+    </div>
+{% endblock %}

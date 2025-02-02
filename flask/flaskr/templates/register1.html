@@ -1,0 +1,50 @@
+{%extends 'base_auth.html'%}
+{%block title%}Sign in{%endblock%}
+{%block styles%}
+  <link href="{{ url_for('static', filename='assets/css/register.css') }}" rel="stylesheet">
+{%endblock%}
+<!-- {%block scripts%}
+  <script src="{{ url_for('static', filename='assets/dist/js/bootstrap.bundle.min.js') }}"></script>
+{%endblock%} -->
+{%block content%}
+  <main class="form-signin w-100 m-auto">
+    <form action="/auth/register/update" method="post">
+      <img class="mb-4" src="{{ url_for('static', filename='assets/brand/bootstrap-logo.svg') }}" alt="Bootstrap logo" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Register</h1>
+
+      <div class="form-floating">
+        <!-- <input type="text" name="username" class="form-control" id="floatingInput" placeholder="Enter your username" required>
+        <label for="floatingInput">Username</label> -->
+        {{form.username(class="form-control", id="floatingInput", placeholder="Enter your username", require=True)}}
+        {{form.username(for="floatingInput")}}
+      </div>
+      <div class="form-floating">
+        <!-- <input type="password" name="password" class="mt-2 form-control" id="floatingPassword" placeholder="Password" required>
+        <label for="floatingPassword">Password</label> -->
+        {{form.password(name="password", class="mt-2 form-control", id="floatingPassword", placeholder="Password", required=True)}}
+        {{form.password(for="floatingPassword")}}
+      </div>
+      <div class="form-floating">
+        <!-- <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="Emailid" required>
+        <label for="floatingEmail">email</label> -->
+        {{form.emailid(class="form-control", id="floatingEmail", placeholder="Emailid", required=True)}}
+        {{form.emailid(for="floatingEmail)}}
+      </div>
+      {{form.hidden_tag()}}
+
+      <button class="btn mt-2 btn-primary w-100 py-2" type="submit">Register</button>
+    </form>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="alert alert-info alert-dismissible flash" role="alert">
+          <div>{message[0]}</div>`,
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    
+    {% endif %}
+    {% endwith %}
+  </main>
+
+
+{%endblock%}
+  

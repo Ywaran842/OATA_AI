@@ -1,0 +1,42 @@
+-- Drop existing tables if they exist
+DROP TABLE IF EXISTS Users;
+DROP TABLE IF EXISTS posts;
+DROP TABLE IF EXISTS session;
+
+-- Create Users table
+CREATE TABLE Users (
+  username VARCHAR(30) NOT NULL,
+  password VARCHAR(250) NOT NULL,
+  mailid VARCHAR(45) NOT NULL,
+  id VARCHAR(36) NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY id_UNIQUE (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Create posts table
+CREATE TABLE posts (
+  id VARCHAR(36) NOT NULL,
+  uid VARCHAR(36) NOT NULL,
+  likes INT NOT NULL DEFAULT '0',
+  title VARCHAR(256) NOT NULL,
+  body VARCHAR(256) NOT NULL,
+  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  img LONGBLOB NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY id_UNIQUE (id),
+  KEY fk_posts_1_idx (uid),
+  CONSTRAINT fk_posts_1 FOREIGN KEY (uid) REFERENCES Users (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Create session table
+CREATE TABLE session (
+  id VARCHAR(36) NOT NULL,
+  uid VARCHAR(36) NOT NULL,
+  token VARCHAR(45) NOT NULL,
+  login_time TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  ip VARCHAR(45) NOT NULL,
+  user_agent VARCHAR(256) NOT NULL,
+  active VARCHAR(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (id),
+  UNIQUE KEY id_UNIQUE (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

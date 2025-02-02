@@ -1,0 +1,24 @@
+
+MYSQL_HOST = 'localhost'
+MYSQL_USER = 'root'
+MYSQL_PASSWORD = 'yokesh'
+MYSQL_PORT = 3306
+MYSQL_DB = 'yokesh'
+
+SECRET_KEY = 'dev'
+
+#reCAPTCHA keys
+RECAPTCHA_PUBLIC_KEY = '6LeRRH4qAAAAAIMC0LkMCnJJW2ngZDoNoOSnFeZZ'
+RECAPTCHA_PRIVATE_KEY = '6LeRRH4qAAAAAOg0LKmkn4amaFPUameDJhMxHQ_c'
+
+# Optional parameters
+# RECAPTCHA_PARAMETERS = {'hl': 'en'}  # Set language to English
+# RECAPTCHA_DATA_ATTRS = {'theme': 'light'} 
+
+#smtp login credential
+
+SMTP_SERVER = 'smtp.gmail.com'
+SMTP_PORT = 587
+SMTP_EMAIL = 'yogesh441976@gmail.com'
+APP_PASSWORD = 'pgph akel ywqw xvyr'
+SMTP_RECPT = 'ywaran842@gmail.com'

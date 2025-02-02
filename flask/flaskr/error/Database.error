@@ -1,0 +1,9 @@
+2024-11-11 19:40:40 - (2003, "Can't connect to MySQL server on 'mysql.selfmade.ninja:3306' ([Errno -2] Name or service not known)")
+2024-11-11 19:47:48 - (2003, "Can't connect to MySQL server on 'mysql.selfmade.ninja' ([Errno 111] Connection refused)")
+2024-11-11 19:56:03 - (2003, "Can't connect to MySQL server on 'mysql.selfmade.ninja' ([Errno 111] Connection refused)")
+2024-11-12 10:03:38 - (2003, "Can't connect to MySQL server on 'local' ([Errno -3] Temporary failure in name resolution)")
+2024-11-12 10:05:37 - (2003, "Can't connect to MySQL server on 'local' ([Errno -3] Temporary failure in name resolution)")
+2024-11-12 10:12:06 - (2003, "Can't connect to MySQL server on 'local' ([Errno -3] Temporary failure in name resolution)")
+2024-11-12 10:14:22 - (2003, "Can't connect to MySQL server on 'local' ([Errno -3] Temporary failure in name resolution)")
+2024-11-12 10:18:37 - (2003, "Can't connect to MySQL server on 'local' ([Errno -3] Temporary failure in name resolution)")
+2024-11-12 10:20:38 - (2003, "Can't connect to MySQL server on 'local' ([Errno -3] Temporary failure in name resolution)") getconnection

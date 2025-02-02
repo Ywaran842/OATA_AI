@@ -1,0 +1,118 @@
+.
+├── app.py
+├── config.py
+├── flaskr
+│   ├── auth
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── routes.cpython-310.pyc
+│   │   └── routes.py
+│   ├── Class
+│   │   ├── authentication.py
+│   │   ├── beforequest.py
+│   │   ├── getConnection.py
+│   │   ├── __pycache__
+│   │   │   ├── authentication.cpython-310.pyc
+│   │   │   ├── beforequest.cpython-310.pyc
+│   │   │   ├── getConnection.cpython-310.pyc
+│   │   │   ├── Session.cpython-310.pyc
+│   │   │   ├── userdata.cpython-310.pyc
+│   │   │   └── usersession.cpython-310.pyc
+│   │   ├── Session.py
+│   │   ├── userdata.py
+│   │   └── usersession.py
+│   ├── Email_smtp
+│   │   ├── auth_mail.py
+│   │   └── __pycache__
+│   │       └── auth_mail.cpython-310.pyc
+│   ├── error
+│   │   ├── Authentication.error
+│   │   ├── Database.error
+│   │   ├── overall.error
+│   │   ├── __pycache__
+│   │   │   └── writeerror.cpython-310.pyc
+│   │   └── writeerror.py
+│   ├── error_Handling
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── routes.cpython-310.pyc
+│   │   └── routes.py
+│   ├── Flaskrlogging.py
+│   ├── homepage
+│   ├── __init__.py
+│   ├── main
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── routes.cpython-310.pyc
+│   │   └── routes.py
+│   ├── __pycache__
+│   │   ├── app.cpython-310.pyc
+│   │   ├── Flaskrlogging.cpython-310.pyc
+│   │   ├── hello.cpython-310.pyc
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── routes.cpython-310.pyc
+│   │   └── sign_in.cpython-310.pyc
+│   ├── schema
+│   │   └── schema.sql
+│   ├── static
+│   │   ├── assets
+│   │   │   ├── brand
+│   │   │   │   ├── bootstrap-logo.svg
+│   │   │   │   └── bootstrap-logo-white.svg
+│   │   │   ├── css
+│   │   │   │   ├── carousel.css
+│   │   │   │   ├── register.css
+│   │   │   │   └── sign-in.css
+│   │   │   ├── dist
+│   │   │   │   ├── css
+│   │   │   │   │   ├── bootstrap.min.css
+│   │   │   │   │   ├── bootstrap.min.css.map
+│   │   │   │   │   ├── bootstrap.rtl.min.css
+│   │   │   │   │   └── bootstrap.rtl.min.css.map
+│   │   │   │   └── js
+│   │   │   │       ├── bootstrap.bundle.min.js
+│   │   │   │       └── bootstrap.bundle.min.js.map
+│   │   │   └── js
+│   │   │       └── color-modes.js
+│   │   └── style.css
+│   ├── templates
+│   │   ├── base_auth.html
+│   │   ├── base_home.html
+│   │   ├── create.html
+│   │   ├── error_handler.html
+│   │   ├── home.html
+│   │   ├── register1.html
+│   │   ├── register.html
+│   │   ├── sign_in.html
+│   │   └── update.html
+│   └── wtf_Class
+│       ├── __pycache__
+│       │   ├── wtf_Auth.cpython-310.pyc
+│       │   └── wtf_Main.cpython-310.pyc
+│       ├── wtf_Auth.py
+│       └── wtf_Main.py
+├── instance
+│   ├── config.py
+│   └── __pycache__
+│       └── config.cpython-310.pyc
+├── logs
+│   ├── error.log
+│   ├── info.log
+│   └── warning.log
+├── __pycache__
+│   ├── app.cpython-310.pyc
+│   └── config.cpython-310.pyc
+├── pyproject.toml
+├── sample.html
+├── smtp2.py
+├── smtp.py
+├── test
+│   └── conftest.py
+├── testdb.py
+├── test.py
+└── touch.txt
+
+32 directories, 83 files

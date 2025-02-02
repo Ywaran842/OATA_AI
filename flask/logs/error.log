@@ -1,0 +1,95 @@
+2024-11-23 20:06:02,495 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:18:08,277 - flaskr - ERROR - Exception on /auth/authentication [POST]
+Traceback (most recent call last):
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/yokeshwaran/Desktop/flask/flaskr/auth/routes.py", line 29, in signin
+    login_result = auth.login(formlogin.username.data, formlogin.password.data)
+  File "/home/yokeshwaran/Desktop/flask/flaskr/Class/authentication.py", line 18, in login
+    raise Exception('Error connecting to database login')
+Exception: Error connecting to database login
+2024-11-24 10:20:51,284 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:21:12,179 - flaskr - ERROR - Exception on /auth/authentication [POST]
+Traceback (most recent call last):
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/yokeshwaran/Desktop/flask/flaskr/auth/routes.py", line 29, in signin
+    login_result = auth.login(formlogin.username.data, formlogin.password.data)
+  File "/home/yokeshwaran/Desktop/flask/flaskr/Class/authentication.py", line 18, in login
+    raise Exception('Error connecting to database login')
+Exception: Error connecting to database login
+2024-11-24 10:25:27,474 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:25:50,466 - flaskr - ERROR - Exception on /auth/authentication [POST]
+Traceback (most recent call last):
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/yokeshwaran/Desktop/flask/flaskr/auth/routes.py", line 29, in signin
+    login_result = auth.login(formlogin.username.data, formlogin.password.data)
+  File "/home/yokeshwaran/Desktop/flask/flaskr/Class/authentication.py", line 18, in login
+    raise Exception('Error connecting to database login')
+Exception: Error connecting to database login
+2024-11-24 10:28:46,367 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:29:09,307 - flaskr - ERROR - An error occurred: Error connecting to database login
+2024-11-24 10:30:14,424 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:30:30,197 - flaskr - ERROR - An error occurred: Error connecting to database login
+2024-11-24 10:31:01,320 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:31:21,727 - flaskr - ERROR - Exception on /auth/authentication [POST]
+Traceback (most recent call last):
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/yokeshwaran/Desktop/flask/flaskr/auth/routes.py", line 29, in signin
+    login_result = auth.login(formlogin.username.data, formlogin.password.data)
+  File "/home/yokeshwaran/Desktop/flask/flaskr/Class/authentication.py", line 18, in login
+    raise Exception('Error connecting to database login')
+Exception: Error connecting to database login
+2024-11-24 10:32:28,969 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:32:50,679 - flaskr - ERROR - Exception on /auth/authentication [POST]
+Traceback (most recent call last):
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/yokeshwaran/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/yokeshwaran/Desktop/flask/flaskr/auth/routes.py", line 29, in signin
+    login_result = auth.login(formlogin.username.data, formlogin.password.data)
+  File "/home/yokeshwaran/Desktop/flask/flaskr/Class/authentication.py", line 18, in login
+    raise Exception('Error connecting to database login')
+Exception: Error connecting to database login
+2024-11-24 10:33:21,601 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:33:40,238 - flaskr - ERROR - An error occurred: Error connecting to database login
+2024-11-24 10:36:15,258 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:41:12,247 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:42:33,609 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:42:56,737 - flaskr - ERROR - An error occurred: Error connecting to database login
+2024-11-24 10:43:14,556 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:47:24,459 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:51:42,124 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:53:42,349 - flaskr - ERROR - User failed to login yokesh
+2024-11-24 10:54:41,080 - flaskr - ERROR - User failed to login yokesh

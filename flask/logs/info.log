@@ -1,0 +1,18 @@
+2024-11-23 20:06:20,696 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-11-23 20:59:23,140 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-11-23 20:59:57,627 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-11-24 10:39:58,901 - flaskr - INFO - An error occurred: Error connecting to database login
+2024-11-24 10:41:30,280 - flaskr - INFO - An error occurred: Error connecting to database login
+2024-11-24 10:54:54,612 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-11-24 10:58:01,344 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-11-24 11:00:28,361 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-11-24 11:18:10,617 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-11-24 21:18:26,070 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-11-24 21:19:22,291 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-11-24 21:19:52,071 - flaskr - INFO - User id: 2 on create
+2024-12-07 14:52:24,028 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-12-07 14:53:31,339 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-12-07 15:02:13,611 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-12-07 15:03:20,128 - flaskr - INFO - User login from IP: 127.0.0.1
+2024-12-07 15:33:18,371 - flaskr - INFO - User login from IP: 127.0.0.1
+2025-02-02 15:08:22,394 - flaskr - INFO - User login from IP: 127.0.0.1

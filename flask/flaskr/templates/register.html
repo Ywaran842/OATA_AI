@@ -1,0 +1,52 @@
+{% extends 'base_auth.html' %}
+{% block title %}Sign in{% endblock %}
+{% block styles %}
+  <link href="{{ url_for('static', filename='assets/css/register.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+  <main class="form-signin w-100 m-auto">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="alert alert-info alert-dismissible flash" role="alert">
+          <div>{{ messages[0] }}</div>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form action="/auth/register/update" method="post">
+      <img class="mb-4" src="{{ url_for('static', filename='assets/brand/bootstrap-logo.svg') }}" alt="Bootstrap logo" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Register</h1>
+
+      <div class="form-floating">
+        {{ form.username(class="form-control", id="floatingInput", placeholder="Enter your username", required=True) }}
+        <label for="floatingInput">Username</label>
+      </div>
+      <div class="form-floating">
+        {{ form.password(class="mt-2 form-control", id="floatingPassword", placeholder="Password", required=True) }}
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="form-floating">
+        {{ form.confirmpassword(class="mt-2 form-control", id="floatingConfirmPassword", placeholder="Confirm Password", required=True) }}
+        <label for="floatingConfirmPassword">Confirm Password</label>
+      </div>
+      <div class="form-floating">
+        {{ form.emailid(class="form-control", id="floatingEmail", placeholder="Emailid", required=True) }}
+        <label for="floatingEmail">Email</label>
+      </div>
+
+      {{ form.hidden_tag() }}
+
+      <button class="btn mt-2 btn-primary w-100 py-2" type="submit">Register</button>
+    </form>
+
+    {% if form.confirmpassword.errors %}
+      <div class="alert alert-danger alert-dismissible flash" role="alert">
+        {% for error in form.password.errors %}
+          <div>{{ error }}</div>
+        {% endfor %}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    {% endif %}
+  </main>
+{% endblock %}
