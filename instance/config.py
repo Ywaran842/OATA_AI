@@ -1,15 +1,20 @@
+from dotenv import load_dotenv
+import os
 
-MYSQL_HOST = 'mysql.selfmade.ninja'
-MYSQL_USER = 'yokesh'
-MYSQL_PASSWORD = 'Ywaran842($)'
-MYSQL_PORT = 3306
-MYSQL_DB = 'yokesh_ota_ai'
+load_dotenv()
 
-SECRET_KEY = 'dev'
+# Database configuration
+MYSQL_HOST = os.getenv('MYSQL_HOST')
+MYSQL_USER = os.getenv('MYSQL_USER')
+MYSQL_PASSWORD = os.getenv('MYSQL_PASSWORD')
+MYSQL_PORT = os.getenv('MYSQL_PORT')
+MYSQL_DB = os.getenv('MYSQL_DB')
+
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 #reCAPTCHA keys
-RECAPTCHA_PUBLIC_KEY = '6LeRRH4qAAAAAIMC0LkMCnJJW2ngZDoNoOSnFeZZ'
-RECAPTCHA_PRIVATE_KEY = '6LeRRH4qAAAAAOg0LKmkn4amaFPUameDJhMxHQ_c'
+RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC_KEY')
+RECAPTCHA_PRIVATE_KEY = os.getenv('RECAPTCHA_PRIVATE_KEY')
 
 # Optional parameters
 # RECAPTCHA_PARAMETERS = {'hl': 'en'}  # Set language to English
@@ -17,8 +22,14 @@ RECAPTCHA_PRIVATE_KEY = '6LeRRH4qAAAAAOg0LKmkn4amaFPUameDJhMxHQ_c'
 
 #smtp login credential
 
-SMTP_SERVER = 'smtp.gmail.com'
-SMTP_PORT = 587
-SMTP_EMAIL = 'yogesh441976@gmail.com'
-APP_PASSWORD = 'pgph akel ywqw xvyr'
-SMTP_RECPT = 'ywaran842@gmail.com'
+SMTP_SERVER = os.getenv('SMTP_SERVER')
+SMTP_PORT = os.getenv('SMTP_PORT')
+SMTP_EMAIL = os.getenv('SMTP_EMAIL')
+APP_PASSWORD = os.getenv('APP_PASSWORD')
+SMTP_RECPT = os.getenv('SMTP_RECPT')
+
+#GEMINI API
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+
+#AI MODEL
+TEXT_GENERATE_AI_MODEL = os.getenv('TEXT_GENERATE_AI_MODEL')

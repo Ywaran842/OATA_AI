@@ -1,0 +1,6 @@
+from flask import reder_template, request
+from . import bp
+
+@bp.route('/home', methods=['GET'])
+def index():
+    return render_template('home.html')
