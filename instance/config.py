@@ -1,9 +1,9 @@
 
-MYSQL_HOST = 'localhost'
-MYSQL_USER = 'root'
-MYSQL_PASSWORD = 'yokesh'
+MYSQL_HOST = 'mysql.selfmade.ninja'
+MYSQL_USER = 'yokesh'
+MYSQL_PASSWORD = 'Ywaran842($)'
 MYSQL_PORT = 3306
-MYSQL_DB = 'yokesh'
+MYSQL_DB = 'yokesh_ota_ai'
 
 SECRET_KEY = 'dev'
 
