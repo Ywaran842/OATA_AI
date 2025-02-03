@@ -1,8 +1,8 @@
 from flask import current_app
 import pymysql
-from getConnection import Database
+from .getConnection import Database
 import google.generativeai as genai
-from geminiAPi import gemini_API_MODEL
+from .geminiAPi import gemini_API_MODEL
 
 class genimichat:
 

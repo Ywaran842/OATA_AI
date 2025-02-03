@@ -7,6 +7,9 @@ import logging
 from flaskr.Flaskrlogging import LoggerConfig
 from flaskr.Class.getConnection import Database
 
+# CSRF Protection
+csrf = CSRFProtect()
+
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config['DEBUG'] = True 
@@ -43,20 +46,22 @@ def create_app(test_config=None):
     # app.logger.setLevel(logging.INFO)
     logging_config = LoggerConfig(app)
 
-    # CSRF Protection
-    csrf = CSRFProtect(app)
+    # CSRF Initialization
+    csrf.init_app(app)
     
     # Register Blueprints
     from .auth import bp as auth_bp
     from .main import bp as main_bp
     from .error_Handling import bp as error_bp
+    from .chat import bp as chat_bp
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(main_bp)
     app.register_blueprint(error_bp)
+    app.register_blueprint(chat_bp)
 
     @app.errorhandler(Exception)
     def handle_error(e):
         print(f"An error occurred: {str(e)}")
-        return "An error occurred, please check the logs for details.", 500
+        return f"An error occurred, please check the logs for details.{str(e)}", 500
     return app  

@@ -2,7 +2,7 @@
 from flask import Blueprint, redirect, url_for, flash, request, render_template, current_app, g
 from flaskr.Class.authentication import Authentication
 from . import bp  # Import bp from __init__.py
-from flaskr.Class.usersession import sessionAuth
+from flaskr.Class.usersession import sessionAuth    
 from flaskr.Class.Session import SessionManager
 from flaskr.wtf_Class.wtf_Auth import Loginform, Registerform
 from flaskr.Email_smtp.auth_mail import mail
@@ -54,8 +54,6 @@ def signin():
         current_app.logger.info(f"User login from IP: {request.remote_addr}")
         SessionManager.set_session('token', str(token))
         SessionManager.set_session('userid', str(login_result[1]))
-        
-        #Assign g variable
         return redirect(url_for('main.index'))
 
 @bp.route('/register/update', methods=['POST'])
