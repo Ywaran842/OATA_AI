@@ -8,8 +8,8 @@ app = Flask(__name__)
 # Gmail SMTP Server configuration
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587  # For TLS
-SENDER_EMAIL = "yogesh441976@gmail.com"  # Replace with your email
-APP_PASSWORD = "pgph akel ywqw xvyr"  # Replace with the generated app password
+SENDER_EMAIL = ""  # Replace with your email
+APP_PASSWORD = ""  # Replace with the generated app password
 
 @app.route('/', methods=['GET', 'POST'])
 def send_email():
